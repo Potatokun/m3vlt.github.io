@@ -1,0 +1,454 @@
+@import '../css/rem.css';
+@import '../../css/animate.css';
+
+* {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+body {
+    position: relative;
+    background-color: #000;
+}
+
+.m-viewport {
+    position: relative;
+    width: 7.5rem;
+    min-height: 56.6rem;
+    margin: 0 auto;
+    padding-top: 14rem;
+    font-size: .24rem;
+    background-color: #2f1505;
+    background-image: url(../images/body.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.title-2{
+    width: 6.17rem;
+    height: 1.63rem;
+    margin: 0 auto;
+    background-image: url(../images/title-1.png);
+}
+
+.title-3{
+    width: 4.79rem;
+    height: 1.17rem;
+    margin: 0 auto .6rem;
+    background-image: url(../images/title-2.png);
+}
+
+.title-1{
+    width: 5.47rem;
+    height: 1.14rem;
+    margin: 0 auto .6rem;
+    background-image: url(../images/title-3.png);
+}
+
+.char-img{
+    position: relative;
+    width: 7.5rem;
+    height: 10.98rem;
+    background-image: url(../images/char-img.png);
+}
+
+.m-skill .char-img .trriger {
+    position: absolute;
+    width: .61rem;
+    height: 2.44rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.char-img .trriger.c-1 {
+    left: 0;
+    top: .5rem;
+    background-image: url(../images/trriger-1.png);
+}
+
+.char-img .trriger.c-2 {
+    right: 2%;
+    top: .5rem;
+    background-image: url(../images/trriger-2.png);
+}
+
+.skill-panel{
+    position: relative;
+    width: 6.92rem;
+    height: 8.72rem;
+    margin: -6rem auto 0;
+    padding: .5rem .4rem 0;
+    background-image: url(../images/bg-skill.png);  
+    box-sizing: border-box;  
+}
+
+.hero-item h5 {
+    font-size: .32rem;
+    margin-bottom: .1rem;
+    color: #99242e;
+}
+
+.skill-text {
+    /* margin-bottom: 25px; */
+    color: #99242e;
+    line-height: 1.5;
+}
+
+.skill-view .img-view {
+    width: 5.93rem;
+    height: 3.35rem;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.skill-view .img-view img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.tab-hd {
+    text-align: center;
+    font-size: 0;
+}
+
+.skill-view .tab-btn {
+    display: inline-block;
+    width: 1.49rem;
+    height: .78rem;
+    font-size: 0;
+    background-image: url(../images/sprite-utils.png);
+    background-size: 10rem auto;
+}
+
+.skill-view .tab-btn.btn-1 {
+    background-position: -.3rem -2.05rem;
+}
+
+.skill-view .tab-btn.btn-2 {
+    background-position: -1.79rem -2.05rem;
+}
+
+.skill-view .tab-btn.btn-3 {
+    background-position: -3.28rem -2.05rem;
+}
+
+.skill-view .tab-btn.btn-4 {
+    background-position: -4.77rem -2.05rem;
+}
+
+.skill-view .tab-btn.btn-1.active {
+    background-position: -.3rem -2.92rem;
+}
+
+.skill-view .tab-btn.btn-2.active {
+    background-position: -1.79rem -2.92rem;
+}
+
+.skill-view .tab-btn.btn-3.active {
+    background-position: -3.28rem -2.92rem;
+}
+
+.skill-view .tab-btn.btn-4.active {
+    background-position: -4.77rem -2.92rem;
+}
+
+.m-evt-detail{
+    margin-top: 1.1rem;
+}
+
+.img-mission{
+    width: 6.23rem;
+    height: 3.97rem;
+    margin: 0 auto;
+    background-image: url(../images/img-evt.png);
+}
+
+.mission-detail{
+    width: 6.18rem;
+    height: 5.49rem;
+    margin: .25rem auto 0;
+    padding: .38rem .45rem 0;
+    background-image: url(../images/bg-evt-2.png);
+}
+
+.mission-list {
+    padding-top: 28px;
+}
+
+.mission-title {
+    width: 1.77rem;
+    height: .19rem;
+    margin: 0 auto .15rem;
+}
+
+.mission-title.t-1 {
+    background-image: url(../images/title-mission.png);
+}
+
+.mission-title.t-2 {
+    background-image: url(../images/title-level.png);
+}
+
+.mission-list ul {
+    text-align: center;
+}
+
+.mission-list li {
+    position: relative;
+    display: inline-block;
+    width: .92rem;
+    height: .92rem;
+    margin: 0 .15rem;
+    background-color: #333333;
+}
+
+.pic {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: .92rem;
+    height: .92rem;
+    margin: -.46rem 0 0 -.46rem;
+    background-color: #000;
+}
+
+.pic.A001 {
+    background-image: url(../images/items/A001.png);
+}
+
+.pic.A002 {
+    background-image: url(../images/items/A002.png);
+}
+
+.pic.A003 {
+    background-image: url(../images/items/A003.png);
+}
+
+.pic.A004 {
+    background-image: url(../images/items/A004.png);
+}
+
+.pic.A005 {
+    background-image: url(../images/items/A005.png);
+}
+
+.pic.A006 {
+    background-image: url(../images/items/A006.png);
+}
+
+.pic.A007 {
+    background-image: url(../images/items/A007.png);
+}
+
+.pic.A008 {
+    background-image: url(../images/items/A008.png);
+}
+
+.pic.C001 {
+    background-image: url(../images/items/C1-1.png);
+}
+
+.pic.C002 {
+    background-image: url(../images/items/C1-2.png);
+}
+
+.pic.C003 {
+    background-image: url(../images/items/C1-3.png);
+}
+
+.pic.C004 {
+    background-image: url(../images/items/C1-4.png);
+}
+
+.pic.C005 {
+    background-image: url(../images/items/C2-1.png);
+}
+
+.pic.C006 {
+    background-image: url(../images/items/C2-2.png);
+}
+
+.pic.C007 {
+    background-image: url(../images/items/C2-3.png);
+}
+
+.pic.C008 {
+    background-image: url(../images/items/C2-4.png);
+}
+
+
+.mission-time {
+    margin-top: .2rem;
+    text-align: center;
+}
+
+.mission-time h6 {
+    font-size: .28rem;
+    color: #a11b25;
+}
+
+.mission-time p {
+    color: #8f7476;
+}
+
+.m-main{
+    margin-top: 1rem;
+}
+
+.evt-item{
+    position: relative;
+    padding: .7rem .6rem 0;
+    box-sizing: border-box;
+}
+
+.evt-item.e-1{
+    width: 6.18rem;
+    height: 3.49rem;
+    margin: 0 auto;
+    background-image: url(../images/bg-e1.png);
+}
+
+.evt-item.e-2{
+    width: 6.18rem;
+    height: 3.99rem;
+    margin: 0 auto;
+    background-image: url(../images/bg-e2.png);
+}
+
+.evt-item.e-3{
+    width: 6.18rem;
+    height: 3.39rem;
+    margin: 0 auto;
+    background-image: url(../images/bg-e3.png);
+}
+
+.evt-text{
+    color: #8f7476;
+}
+
+.evt-text b{
+    color: #ba283d;
+}
+
+.reward-list{
+    position: absolute;
+    left: 0;
+    bottom: .64rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.reward-item {
+    position: relative;
+    width: .92rem;
+    height: .92rem;
+    margin: 0 auto .05rem;
+}
+
+/* TIPS */
+.u-tips {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 21;
+}
+
+.u-tips .u-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .75);
+}
+
+
+.u-tips .tip-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 7.5rem;
+    transform: translate(-50%, -50%);
+}
+
+.u-tips .tip-container img {
+    width: 100%;
+    max-height: 100%;
+}
+
+
+.topic .itemDesc {
+    margin-top: 10px;
+    color: #a1e5ff;
+}
+
+.topic .type2 {
+    color: #fff;
+}
+
+.topic .type3 {
+    margin-bottom: 10px;
+}
+
+.topic .green,
+.topic .strength,
+.topic .agility,
+.topic .mentality,
+.topic .iniMovementSpeed,
+.topic .healthPoint,
+.topic .manaPerSecond,
+.topic .skillStats,
+.integralAddition,
+.topic .smPerSecond,
+.fightingCapAdd {
+    color: #00ff00;
+}
+
+.topic .skillAdd1 {
+    margin-top: 10px;
+}
+
+.topic .skillAdd1,
+.topic .skillAdd2 {
+}
+
+.topic .skillAdd1,
+.topic .skillAdd2 {
+    color: #0088ff;
+}
+
+.topic .purple {
+    color: #9205EA;
+}
+
+.topic .gold,
+.topic .type3 {
+    color: #FFCC11;
+}
+
+.topic .dGold {
+    color: #dd9955;
+}
+
+.topic .orange,
+.topic .magicValue {
+    color: #FF8800;
+}
+
+.topic .blue {
+    color: #0088ff;
+}
+
+.tips-detail{
+    font-size: .24rem;
+    padding: 0 .3rem;
+}
