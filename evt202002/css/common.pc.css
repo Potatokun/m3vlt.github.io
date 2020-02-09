@@ -148,10 +148,11 @@ body {
 
 .cover .main-title {
     position: absolute;
-    top:64px;
-    left: 15%;
+    top:44px;
+    left: 50%;
     width: 338px;
     height: 665px;
+    margin-left: -550px;
     background-image: url(../images/main-title.png);
 }
 

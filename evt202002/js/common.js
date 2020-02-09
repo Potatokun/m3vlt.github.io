@@ -294,7 +294,7 @@ $('.slide-1').mousewheel(function(event, delta) {
     const W = window.innerWidth;
     const H = window.innerHeight;
    
-    let tickCount = 150;
+    let tickCount = 450;
     let ticker = 0;
     let lastTime = Date.now();
     let deltaTime = 0;
@@ -328,7 +328,7 @@ $('.slide-1').mousewheel(function(event, delta) {
             canvas.style.cssText = 'position: fixed; top: 0; left: 0; pointer-events: none;z-index:60';
             document.body.appendChild(canvas);
             if (W < 768) {
-              tickCount = 350;
+              tickCount = 750;
             }
     
             loop();
