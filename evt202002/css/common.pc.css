@@ -103,6 +103,7 @@ body {
     position: relative;
     font-size: 14px;
     box-sizing: border-box;
+    overflow: hidden;
 
     /* Center slide text vertically */
     /* display: -webkit-box;
@@ -132,6 +133,7 @@ body {
 .slide-content {
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
 }
 
 .cover {
@@ -141,8 +143,7 @@ body {
     width: 100%;
     height: 100%;
     background-image: url(../images/cover.jpg);
-    background-size: 100% 100%;
-    background-position: top center;
+    background-position: center 42px;
     z-index: 10;
 }
 
@@ -400,7 +401,7 @@ body {
 .m-skill {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -42px;
     transform: translateX(-50%);
 }
 
@@ -432,7 +433,7 @@ body {
 }
 
 .m-skill .char-img .trriger:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
 .char-img .trriger.c-1 {
