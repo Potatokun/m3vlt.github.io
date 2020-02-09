@@ -19,7 +19,7 @@ body {
     padding-top: 14rem;
     font-size: .24rem;
     background-color: #2f1505;
-    background-image: url(../images/body.jpg);
+    background-image: url(../images/body.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -28,8 +28,8 @@ body {
 }
 
 .title-2{
-    width: 6.17rem;
-    height: 1.63rem;
+    width: 6.29rem;
+    height: 1.66rem;
     margin: 0 auto;
     background-image: url(../images/title-1.png);
 }
@@ -52,7 +52,14 @@ body {
     position: relative;
     width: 7.5rem;
     height: 10.98rem;
+}
+
+.char-img.c-1{
     background-image: url(../images/char-img.png);
+}
+
+.char-img.c-2{
+    background-image: url(../images/char-img-2.png);
 }
 
 .m-skill .char-img .trriger {
@@ -83,6 +90,24 @@ body {
     padding: .5rem .4rem 0;
     background-image: url(../images/bg-skill.png);  
     box-sizing: border-box;  
+}
+
+.m-skill .notice{
+    position: absolute;
+    left: 0;
+    bottom: .5rem;
+    width: 100%;
+    height: .23rem;
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.m-skill .notice.a-1{
+    background-image: url(../images/a-1.png);
+}
+
+.m-skill .notice.a-2{
+    background-image: url(../images/a-2.png);
 }
 
 .hero-item h5 {
@@ -177,7 +202,7 @@ body {
 }
 
 .mission-list {
-    padding-top: 28px;
+    padding-top: .38rem;
 }
 
 .mission-title {
@@ -283,18 +308,24 @@ body {
 
 
 .mission-time {
-    margin-top: .2rem;
+    position: relative;
+    width: 5rem;
+    height: .86rem;
+    margin: .4rem  auto 0;
     text-align: center;
+    font-size: 0;
+    color: transparent;
+    background-image: url(../images/evt-time.png);
 }
 
-.mission-time h6 {
+/* .mission-time h6 {
     font-size: .28rem;
     color: #a11b25;
 }
 
 .mission-time p {
     color: #8f7476;
-}
+} */
 
 .m-main{
     margin-top: 1rem;
@@ -302,7 +333,7 @@ body {
 
 .evt-item{
     position: relative;
-    padding: .7rem .6rem 0;
+    padding: .8rem .6rem 0;
     box-sizing: border-box;
 }
 
@@ -338,8 +369,9 @@ body {
 .reward-list{
     position: absolute;
     left: 0;
-    bottom: .64rem;
+    bottom: .6rem;
     width: 100%;
+    padding: 0 1rem;
     display: flex;
     justify-content: center;
 }

@@ -1,4 +1,5 @@
 var utils = {};
+var bScroll = true;
 
 (function (namespace) {
     // TIP
@@ -174,20 +175,10 @@ var swiper = new Swiper('.swiper-container', {
         slide.addClass('ani-slide');
     },
     onTransitionStart: function (swiper) {
-        if(swiper.activeIndex > 0){
-            $('.u-nav').fadeOut();
-
-            $('.m-viewport').addClass('fadeIn masky show');
-            $('.u-mask').removeClass('fadeIn masky show');           
-        }
-        else{
-            $('.m-viewport').removeClass('fadeIn masky show');
-            $('.u-mask').addClass('fadeIn masky show');                
-        }
     },
     onTransitionEnd: function (swiper) {
         swiper.activeIndex == 0? '' : $('.u-nav').fadeIn();
-        $('.u-nav').removeClass('active-1 active-2 active-3').addClass('active-' + swiper.activeIndex);
+        $('.u-nav').removeClass('active-1 active-2 active-3').addClass('active-' + (swiper.activeIndex+1));
     }
 });
 
@@ -234,4 +225,55 @@ $('.m-skill .trriger').click(function(){
 
     $('.m-skill .hero-item').hide();
     $('.m-skill .hero-item').eq(btn.index()).show();
+
+    $('.m-skill .char-img').removeClass('c-1 c-2').addClass('c-'+(btn.index()+1));
+});
+
+$('.cover').mousewheel(function(event, delta) {
+
+    event.preventDefault();
+
+    if(!bScroll)return;
+
+    if (delta > 0) {
+        // up
+        
+    } else if (delta < 0){
+        //down
+        $('.cover').animate({top : '-100%',opacity: 0},800);
+        $('.u-nav').fadeIn();                 
+    }
+
+    bScroll = false;
+
+    setTimeout(function(){
+        bScroll = true;
+    },1000);
+    
+    
+});
+
+$('.slide-1').mousewheel(function(event, delta) {
+
+    event.preventDefault();
+
+    if(!bScroll)return;
+
+    if (delta > 0) {
+        // up
+        $('.cover').animate({top : '0',opacity: 1},800);
+        $('.u-nav').fadeOut();           
+    } else if (delta < 0){
+        //down
+        $('.cover').animate({top : '-100%',opacity: 0},800);
+        $('.u-nav').fadeIn();                 
+    }
+
+    bScroll = false;
+
+    setTimeout(function(){
+        bScroll = true;
+    },1000);
+    
+    
 });

@@ -126,4 +126,6 @@ $('.m-skill .trriger').click(function(){
 
     $('.m-skill .hero-item').hide();
     $('.m-skill .hero-item').eq(btn.index()).show();
+
+    $('.m-skill .char-img').removeClass('c-1 c-2').addClass('c-'+(btn.index()+1));
 });

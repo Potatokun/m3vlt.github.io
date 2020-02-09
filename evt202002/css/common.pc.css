@@ -53,7 +53,7 @@ body {
     width: 122px;
     height: 96px;
     background-image: url(../images/logo.png);
-    z-index: 3;
+    z-index: 50;
 }
 
 .logo a {
@@ -66,7 +66,7 @@ body {
     position: absolute;
     right: 2%;
     top: 60px;
-    z-index: 10;
+    z-index: 50;
 }
 
 .u-link a {
@@ -134,10 +134,16 @@ body {
     height: 100%;
 }
 
-.main-swiper .swiper-slide.cover {
+.cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     background-image: url(../images/cover.jpg);
     background-size: 100% 100%;
     background-position: top center;
+    z-index: 10;
 }
 
 .cover .main-title {
@@ -146,12 +152,14 @@ body {
     left: 20%;
     width: 338px;
     height: 665px;
-    transform: translate(-20%, -50%);
+    transform: translate(-10%, -50%);
     background-image: url(../images/main-title.png);
 }
 
 .evt-list {
     display: flex;
+    width: 710px;
+    margin: 0 auto;
     justify-content: space-between;
 }
 
@@ -162,23 +170,34 @@ body {
     background-image: url(../images/bg-evt.png);
 }
 
+.evt-list .evt-item::after{
+    display: block;
+    position: absolute;
+    content: '';
+    left:32px;
+    top: 15px;
+    width: 148px;
+    height: 115px;
+    background-image: url(../images/dex.png);
+}
+
 .title-1 {
-    width: 677px;
-    height: 114px;
+    width: 737px;
+    height: 136px;
     margin: 0 auto 40px;
     background-image: url(../images/title-1.png);
 }
 
 .title-2 {
-    width: 736px;
-    height: 111px;
+    width: 710px;
+    height: 194px;
     margin: 0 auto 40px;
     background-image: url(../images/title-2.png);
 }
 
 .title-3 {
-    width: 521px;
-    height: 110px;
+    width: 740px;
+    height: 139px;
     margin: 120px auto 40px;
     background-image: url(../images/title-3.png);
 }
@@ -202,7 +221,22 @@ body {
 }
 
 .evt-text {
+    position: relative;
     margin: 0 auto 0;
+}
+
+.evt-text:hover .text-tips{
+    display: block;
+}
+
+.text-tips{
+    display: none;
+    position: absolute;
+    right: -100px;
+    top: 95px;
+    width: 65px;
+    height: 253px;
+    background-image: url(../images/t-1.png);
 }
 
 .evt-text p {
@@ -381,6 +415,14 @@ body {
     background-image: url(../images/char-1.png);
 }
 
+.char-img.c-1{
+    background-image: url(../images/char-1.png);
+}
+
+.char-img.c-2{
+    background-image: url(../images/char-2.png);
+}
+
 .m-skill .char-img .trriger {
     position: absolute;
     width: 61px;
@@ -445,6 +487,26 @@ body {
     font-size: 14px;
     color: #99242e;
 }
+
+.m-skill .notice{
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    width: 100%;
+    height: 19px;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.m-skill .notice.a-1{
+    background-image: url(../images/a-1.png);
+}
+
+.m-skill .notice.a-2{
+    background-image: url(../images/a-2.png);
+}
+
 
 .tab-hd {
     text-align: center;
