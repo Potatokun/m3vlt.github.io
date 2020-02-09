@@ -847,9 +847,3 @@ body {
     margin: 0 auto;
     cursor: pointer;
 }
-
-@media screen and (max-height: 1000px) {
-    .m-skill{
-        bottom: -42px;
-    }
-}
